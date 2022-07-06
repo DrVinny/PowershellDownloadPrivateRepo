@@ -12,9 +12,6 @@ $repoURI = "https://api.github.com/repos/$repoOwn/$repoName/zipball/"
 $token = "<yourAccessToken>"
 $headers = @{"Authorization" = "bearer $token"}
 
-
 $ZipFile = "$pwd\$repoName.zip"
-# New-Item $ZipFile -ItemType File -Force
 
-# Write-Host 'Starting downloading the GitHub Repository'
 Invoke-RestMethod -Uri $repoURI -OutFile $ZipFile -Method Get -Headers $headers
