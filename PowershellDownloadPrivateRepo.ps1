@@ -1,4 +1,4 @@
-# This script downloads a private repo with only a URL and access token 
+# This script uses powershell to download a private repo with only a URL and access token 
 
 
 $repoOwn = 'DrVinny'
@@ -9,7 +9,7 @@ $repoName = 'PowershellDownloadPrivateRepo'
 # Main is assumed if $repoBranch is omitted
 
 $repoURI = "https://api.github.com/repos/$repoOwn/$repoName/zipball/"
-$token = "<yourAccessToken>"
+$token = "ghp_yourAccessToken"
 $headers = @{"Authorization" = "bearer $token"}
 
 $ZipFile = "$pwd\$repoName.zip"
