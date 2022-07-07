@@ -1,6 +1,7 @@
 # PowershellDownloadPrivateRepo
 
-## This script uses powershell to download a private repo from github.com and puts it into a zip file in $pwd
+## This script uses powershell to download a private repo from github.com
+## It saves it as as .zip file to $pwd
 
 ### Information required:
 - Repo owner
